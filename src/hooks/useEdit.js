@@ -8,10 +8,11 @@ const useEdit = () => {
 };
 
 export const Editable = (props) => {
-  const [edit, setEdit] = useState(null);
+  const [edit, setEdit] = useState(false);
+  const [isEditable] = useState(props.isEditable);
   console.log(props.children);
   return (
-    <EditContext.Provider value={{ edit, setEdit }}>
+    <EditContext.Provider value={{ edit, setEdit, isEditable }}>
       {props.children}
     </EditContext.Provider>
   );

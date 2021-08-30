@@ -5,7 +5,7 @@ import Parent from "./components/Parent";
 function App() {
   return (
     <div className="App" style={{display: 'flex'}}>
-      <Parent />
+      <Parent isEditable/>
       <Parent />
     </div>
   );

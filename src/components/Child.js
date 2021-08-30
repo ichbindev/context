@@ -3,12 +3,12 @@ import Grandchild from './Grandchild';
 import useEdit from '../hooks/useEdit';
 
 export function Child(props) {
-  const { edit, setEdit } = useEdit();
+  const { edit, setEdit, isEditable } = useEdit();
 
   return (
     <div>
       Child <br/>
-      <button onClick={() => setEdit(!edit)}>Edit</button>
+      {isEditable && <button onClick={() => setEdit(!edit)}>Edit</button>}
       <Grandchild />
     </div>
   );

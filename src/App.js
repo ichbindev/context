@@ -3,9 +3,10 @@ import Parent from "./components/Parent";
 
 function App() {
   return (
-    <div className="App" style={{display: 'flex'}}>
-      <Parent isEditable/>
+    <div className="App" style={{ display: "flex" }}>
+      <Parent isEditable />
       <Parent />
+      <Parent isEditable />
     </div>
   );
 }

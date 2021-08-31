@@ -4,7 +4,7 @@ import { Editable } from "../hooks/useEdit";
 
 export function Parent({ isEditable }) {
   return (
-    <div className="parent">
+    <div className="parent container">
       <Editable isEditable={isEditable}>
         Parent
         <Child />
